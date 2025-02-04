@@ -1,0 +1,287 @@
+/* Bootstrap icons library */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* Shortcuts */
+:root {
+  /* colors shortcut */
+  --primary-color: #F58634;
+  --secondary-color: #263F50;
+  --tertiary-color: #F7F7F7;
+  /* font-family shortcut */
+  --primary-font: 'Quicksand', serif;
+  --secondary-font: 'Poppins', serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Google Fonts */
+  font-family: "Quicksand", serif;
+}
+
+
+/**************************************************
+        CSS for Nav
+**************************************************/
+.navbar-nav .nav-link {
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  margin: 0 10px;
+  padding: 0px;
+  font-weight: 500;
+}
+
+.fa-brands:hover {
+  color: var(--secondary-color)
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.nav-icon {
+  margin: 0 5px;
+}
+
+.nav-icon img {
+  height: 20px;
+}
+
+.cart-icon img {
+  height: 24px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav .nav-link {
+  color: var(--secondary-color);
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.nav-icon {
+  margin: 0 5px;
+}
+
+.nav-icon img {
+  height: 20px;
+}
+
+.cart-icon img {
+  height: 24px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-nav a {
+  color: #000000;
+}
+
+/* Hero-Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  /* Adding a dark overlay */
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/millets.webp');
+  /* Replace with your image path */
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.hero-section h1 {
+  font-family: var(--primary-font);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.hero-section p {
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  margin: 20px 0;
+  text-align: justify
+}
+
+.callback-form .input-group {
+  max-width: 400px;
+  margin: 20px 20px 0px 0px;
+}
+
+.input-group .btn {
+  border-radius: 0;
+  font-size: 1.2rem;
+  padding: 10px 30px;
+}
+
+/* Targeting call icon */
+.input-group .input-group-text {
+  color: #F58634;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+/* Promotional Section */
+.pcontainer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('assets/millets_background.webp');
+  padding: 50px;
+}
+
+.pcol h3 {
+  font-family: var(--primary-font);
+  font-weight: 800;
+  color: #F7F7F7;
+}
+
+.pcol p {
+  font-family: var(--secondary-font);
+  font-size: 0.9rem;
+  color: #F7F7F7;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.customer-count img {
+  width: 40px;
+  height: 40px;
+  margin-right: -10px;
+  /* Adjust this value as needed for the desired overlap */
+  border: 2px solid black;
+}
+
+.customer-count p {
+  margin-left: 10px;
+  font-family: var(--secondary-font);
+}
+
+.form {
+  width: 100%;
+  padding: 30px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #1E2221, #525C59);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form {
+  margin-bottom: 10px;
+  width: 100%;
+  /* Ensures full width of form fields */
+  border-radius: 0;
+}
+
+.form h3,
+.form p {
+  color: #fff;
+}
+
+.btn-form {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  color: #fff;
+  border-radius: 50px;
+}
+
+/* .form-group input, .form-group textarea {
+  background-color: rgba(255, 0, 0, 0) ;
+  color: #fff;
+} */
+
+/* Footer Section */
+footer {
+  background-image: url('assets/wheat-field-seamless-border-vector-background-high-growth-cereal-crops-rye-is-dense-tall-grass-b-min.webp');
+  /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+  color: #fff;
+  /* Adjust text color for better visibility on the background image */
+  background-color: #3c9cc9b6;
+  padding: 40px 0;
+  color: #fff;
+}
+
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #e9ecef;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-bottom a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom #copyright {
+  margin-bottom: 0;
+  padding: 0;
+  background-color: #187bdd;
+}
