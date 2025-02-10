@@ -100,6 +100,19 @@ body {
   font-family: "Quicksand", serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", serif;
+}
+
+p {
+  font-family: "Poppins", serif;
+}
+
 
 /**************************************************
         CSS for Nav
@@ -542,21 +555,20 @@ body {
 }
 
 .container h2 {
-  font-family: "Baskervville", serif;
+  /* font-family: "Baskervville", serif; */
   /* Classic serif font for heading */
   color: #333;
   /* Dark neutral tone for contrast */
   text-transform: capitalize;
   font-size: 2rem;
   position: relative;
-  display: inline-block;
   margin-bottom: 1rem;
 }
 
 .container h2::after {
   content: "";
   display: block;
-  width: 50px;
+  width: 160px;
   height: 4px;
   background-color: #ffa500;
   margin: 10px auto 0;
