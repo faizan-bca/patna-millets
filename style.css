@@ -573,3 +573,237 @@ p {
   background-color: #ffa500;
   margin: 10px auto 0;
 }
+
+
+/* 
+  #Contact Us Page Styling
+*/
+
+/* Contact Page of Landing Page with Query Form END*/
+
+/* Contact Us Hero Section */
+.contact-hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  /* Adjust height as needed */
+  background-image: url(assets/overflowing-display-whole-grain-cereals-rustic-bowls.jpg);
+  background-attachment: fixed;
+  /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Dark overlay, adjust opacity as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+}
+
+/* mera custom box css edited by Rehaan */
+
+.contact-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 50px auto;
+}
+
+.contact-section .contact-info {
+  width: 100%;
+  height: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+
+.contact-info .icon-box {
+  background-color: var(--primary-color);
+  /* Darker pink for icon background */
+  color: #fff;
+  font-size: 24px;
+  padding: 20px;
+  /* Increased padding for larger icons */
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 80px;
+  /* Fixed width for uniform size */
+  height: 80px;
+  /* Fixed height for uniform size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  /* Center the icon and add margin below */
+}
+
+.contact-info h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+}
+.contact-info p a{
+  text-decoration: none;
+  color:#000000
+}
+
+.contact-info i {
+  font-size: 32px;
+  /* Increased icon size for better visibility */
+}
+
+@media screen and (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+  }
+}
+
+
+
+/* General container and MAP styling */
+.gmap {
+  background-color: #ffffff;
+  border-radius: 28px; /* outer radius = inner radius (20px) + padding (8px) */
+  padding: 20px; /* Adding padding to ensure content doesn't touch the edges */
+  margin: 20px auto; /* Center the container */
+}
+
+.map {
+  border-radius: 20px; /* inner radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Make the map responsive */
+  height: 100%;
+}
+
+/* Adjust FORM container */
+.form-container {
+  padding: 0px 20px 1px 20px; /* Increased padding for better spacing */
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Align input groups in a row */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group-row .input-group {
+  flex: 1;
+}
+
+.input-group-row .input-group:first-child {
+  margin-right: 10px; /* Space between Full Name and Phone fields */
+}
+
+/* Standard input and textarea styling */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Submit button styling */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.form-container button:hover {
+  background-color: var(--secondary-color);
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gmap {
+    padding: 10px;
+  }
+
+  .map, .form-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .input-group-row {
+    flex-direction: column;
+  }
+
+  .input-group-row .input-group:first-child {
+    margin-right: 0;
+    margin-bottom: 15px; /* Space between stacked fields */
+  }
+}
+
+
+/* About Us Page Styling */
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  /* Adjust height as needed */
+  background-image: url(assets/millets-farm.webp);
+  background-attachment: fixed;
+  /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.329);
+  /* Dark overlay, adjust opacity as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+}
