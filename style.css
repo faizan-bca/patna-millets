@@ -659,9 +659,10 @@ p {
   text-align: center;
   color: #666;
 }
-.contact-info p a{
+
+.contact-info p a {
   text-decoration: none;
-  color:#000000
+  color: #000000
 }
 
 .contact-info i {
@@ -680,21 +681,27 @@ p {
 /* General container and MAP styling */
 .gmap {
   background-color: #ffffff;
-  border-radius: 28px; /* outer radius = inner radius (20px) + padding (8px) */
-  padding: 20px; /* Adding padding to ensure content doesn't touch the edges */
-  margin: 20px auto; /* Center the container */
+  border-radius: 28px;
+  /* outer radius = inner radius (20px) + padding (8px) */
+  padding: 20px;
+  /* Adding padding to ensure content doesn't touch the edges */
+  margin: 20px auto;
+  /* Center the container */
 }
 
 .map {
-  border-radius: 20px; /* inner radius */
+  border-radius: 20px;
+  /* inner radius */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Make the map responsive */
+  width: 100%;
+  /* Make the map responsive */
   height: 100%;
 }
 
 /* Adjust FORM container */
 .form-container {
-  padding: 0px 20px 1px 20px; /* Increased padding for better spacing */
+  padding: 0px 20px 1px 20px;
+  /* Increased padding for better spacing */
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -714,11 +721,13 @@ p {
 }
 
 .input-group-row .input-group:first-child {
-  margin-right: 10px; /* Space between Full Name and Phone fields */
+  margin-right: 10px;
+  /* Space between Full Name and Phone fields */
 }
 
 /* Standard input and textarea styling */
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -749,7 +758,8 @@ input, textarea {
     padding: 10px;
   }
 
-  .map, .form-container {
+  .map,
+  .form-container {
     margin: 0 auto;
     width: 100%;
     max-width: 100%;
@@ -761,6 +771,7 @@ input, textarea {
 
   .input-group-row .input-group:first-child {
     margin-right: 0;
-    margin-bottom: 15px; /* Space between stacked fields */
+    margin-bottom: 15px;
+    /* Space between stacked fields */
   }
 }
