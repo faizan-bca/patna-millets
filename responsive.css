@@ -25,3 +25,15 @@
     /* Adjust as needed */
   }
 }
+
+
+/* For Mobile View Nav */
+@media screen and (max-width: 768px) {
+  .navbar-nav .nav-item {
+    margin: 20px 0 !important;
+    text-align: center;
+    gap: 20px 0;
+    margin: auto;
+  }
+
+}

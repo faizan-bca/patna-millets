@@ -25,3 +25,7 @@
   flex-direction: column;
   color: white;
 }
+
+p{
+  text-align: justify;
+}

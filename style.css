@@ -331,13 +331,30 @@ p {
   overflow: hidden;
 }
 
-.footer-top {
+/* .footer-top {
   padding-block: 60px;
+} */
+
+.footer-top {
+  width: 100%;
+  height: auto;
+  display: grid;
+  /* sirf rehan */
+  grid-template-columns: repeat(4, auto);
+  gap: 60px;
+  padding: 20px 0;
 }
 
-.footer-top .container {
-  display: grid;
-  gap: 60px;
+.footer-col {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+  }
 }
 
 .footer .logo {
@@ -364,12 +381,16 @@ p {
 .social-link {
   width: 50px;
   height: 50px;
-  border: 1px solid;
+  border: 1px solid var(--primary-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: var(--transition-1);
+}
+
+.social-link a {
+  color: var(--primary-color);
 }
 
 .social-link:is(:hover, :focus) {
@@ -447,12 +468,10 @@ p {
 
 .footer-input {
   background-color: var(--white);
-  color: var(--tertiary-color);
+  color: var(--secondary-color);
+  outline: none;
   font-size: var(--fs-6);
-  padding: 16px 20px;
-  padding-inline-end: 50px;
   border-radius: var(--radius-4);
-  height: 50px;
 }
 
 .footer-form-btn {
@@ -525,11 +544,19 @@ p {
 /* Millets Section */
 .millet-item {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .millet-item:hover {
   transform: scale(1.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background-color: var(--primary-color);
+
+  p {
+    color: #fff;
+  }
 }
 
 .millet-item img {
@@ -549,10 +576,7 @@ p {
   margin-top: 10px;
 }
 
-.millet-item p:hover {
-  color: #ffa500;
-  /* Highlight text on hover */
-}
+
 
 .container h2 {
   /* font-family: "Baskervville", serif; */
